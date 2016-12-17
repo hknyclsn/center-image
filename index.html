@@ -11,7 +11,7 @@
 
     <style>
         body { text-align: center; }
-        .center-image-canvas { width: 100%; max-width: 400px; margin: 0 auto; }
+        .center-image-canvas { margin: 0 auto; }
     </style>
 
 </head>
@@ -20,11 +20,17 @@
     <h1>Center Image</h1>
     <p><b>data-responsive: boolen</b> Responsive size disable</p>
     <p><b>data-height: integer</b> Canvas Height </p>
-    <p><b>data-width: integer</b> Image Width</p>
-    <img src="img/image.jpg" alt="Center Image" class="Custom Class" data-height="250" data-width="750" >
+    <p><b>data-width: integer</b> Canvas Width ( is null set 100% )</p>
+    <p><b>data-image-width: integer</b> Image Width (px or %)</p>
+    <p><b>data-image-height: integer</b> Image Height (px or %)</p>
+
+    <img src="https://dummyimage.com/1024x1024/eee/333" alt="Center Image" class="Custom Class" data-height="200" data-width="250" data-image-height="500px" />
+    <br>
+    <img src="https://dummyimage.com/1024x1024/eee/333" alt="Center Image" class="Custom Class" data-height="300" data-width="350" data-image-width="100%" />
+    <br>
+    <img src="https://dummyimage.com/1024x1024/eee/333" alt="Center Image" class="Custom Class" data-height="500" data-width="450" data-image-height="100%" />
 
 <script>
-
     $(function () {
         $('img').centerImage();
     });
