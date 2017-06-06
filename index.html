@@ -18,23 +18,23 @@
 <body>
 
     <h1>Center Image</h1>
-    <p><b>data-responsive: boolen</b> Responsive size disable</p>
-    <p><b>data-height: integer</b> Canvas Height </p>
-    <p><b>data-width: integer</b> Canvas Width ( is null set 100% )</p>
-    <p><b>data-image-width: integer</b> Image Width (px or %)</p>
-    <p><b>data-image-height: integer</b> Image Height (px or %)</p>
+    <p><b>data-height: 200px</b> Canvas Height (px or %)</p>
+    <p><b>data-width: 200px</b> Canvas Width (px or %)</p>
+    <p><b>data-image-width: 100%</b> Image Width (px or %)</p>
+    <p><b>data-image-height: 100%</b> Image Height (px or %)</p>
+    <p><b>data-xs: true / false</b> Phone activated</p>
+    <p><b>data-sm: true / false</b> Tablet activated</p>
+    <p><b>responsive: [1920,1250,768,480]</b> Responsive Levels</p>
 
-    <img src="https://dummyimage.com/1024x1024/eee/333" alt="Center Image" class="Custom Class" data-height="200" data-width="250" data-image-height="500px" />
-    <br>
-    <img src="https://dummyimage.com/1024x1024/eee/333" alt="Center Image" class="Custom Class" data-height="300" data-width="350" data-image-width="100%" />
-    <br>
-    <img src="https://dummyimage.com/1024x1024/eee/333" alt="Center Image" class="Custom Class" data-height="500" data-width="450" data-image-height="100%" />
+    <img src="https://dummyimage.com/1024x1024/eee/333" alt="Center Image" class="center-image"
+         data-height="200px"
+         data-width="200px"
+         data-image-height="100%"
+         data-image-width="100%"
+         data-xs="true"
+         data-sm="false"
 
-<script>
-    $(function () {
-        $('img').centerImage();
-    });
-</script>
+    />
 
 </body>
 </html>
